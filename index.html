@@ -137,13 +137,22 @@
 
             <ul class="about-list">
                 <li class="about-item">
-                    <img class="about-pic" src="./images/work/box-1.jpg" alt="Веб верстка проектов" width="370"/>
+                  <div class="about-thumb">
+                    <img class="about-pic" src="./images/work/box-1.jpg" alt="Веб верстка проектов" width="370" />
+                    <p class="about-label">Десктопные приложения</p>
+                  </div>
                 </li>
                 <li class="about-item">
-                    <img class="about-pic" src="./images/work/box-2.jpg" alt="Разработка мобильных приложений" width="370"/>
+                  <div class="about-thumb">
+                    <img class="about-pic" src="./images/work/box-2.jpg" alt="Разработка мобильных приложений" width="370" />
+                    <p class="about-label">Мобильные приложения</p>
+                  </div>
                 </li>
                 <li class="about-item">
-                    <img class="about-pic" src="./images/work/box-3.jpg" alt="Веб дизайн" width="370"/>
+                  <div class="about-thumb">
+                    <img class="about-pic" src="./images/work/box-3.jpg" alt="Веб дизайн" width="370" />
+                    <p class="about-label">Дизайнерские решения</p>
+                  </div>
                 </li>
             </ul>
       </div>
@@ -423,4 +432,11 @@
     </footer>
   </body>
 
+   <Script>
+     const { height: headerHeight } = document
+       .querySelector(".header")
+       .getBoundingClientRect( );
+
+     document.body.style.paddingTop = `${headerHeight}px`;
+   </Script>
 </html> 
