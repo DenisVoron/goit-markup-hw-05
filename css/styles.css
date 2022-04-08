@@ -141,6 +141,8 @@ img {
 }
 
 .nav-item {
+  position: relative;
+
   margin-right: 50px;
 }
 .nav-item:last-child {
@@ -161,12 +163,45 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--title-txt-cl);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--secondary-txt-cl);
 }
+.nav-link-main::after {
+  content: '';
+
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  
+  background: var(--secondary-txt-cl);
+  border-radius: 2px;
+}
+.underlining-portfolio::after {
+  content: '';
+  
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  
+  display: block;
+  width: 100%;
+  height: 4px;
+  
+  background: var(--secondary-txt-cl);
+  border-radius: 2px;
+}
+
 .contact-list {
   display: flex;
   align-items: center;
