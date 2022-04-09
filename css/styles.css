@@ -790,6 +790,7 @@ img {
 
   color: var(--footer-txt-cl);
 }
+
 /*модальное окно*/
 .backdrop {
   position: fixed;
@@ -802,6 +803,10 @@ img {
   height: 100%;
   background-color: var(--backdrop-cl);
 }
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 .modal {
   position: absolute;
   
@@ -810,12 +815,30 @@ img {
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
+  /*padding: 8px;*/
 
   background-color: var(--accent-txt-cl);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+.clos-modal {
+  position: absolute;
+
+  left: 93%;
+  top: 0%;
+  width: 30px;
+  height: 30px;
+  
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+.clos-icon {
+  width: 11px;
+  height: 11px;
 }
 
 /*скрываем удаленный заголовок*/

@@ -71,7 +71,7 @@
     <section class="hero">
       <div class="container">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
+        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
 
@@ -431,19 +431,18 @@
        </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button>
+        <button class="clos-modal" data-modal-close>
+          <svg class="clos-icon">
+            <use href="./images/icon/sprite-all.svg#icon-closing"></use>
+          </svg>
         </button>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
+
+
   </body>
-
-   <Script>
-     const { height: headerHeight } = document
-       .querySelector(".header")
-       .getBoundingClientRect( );
-
-     document.body.style.paddingTop = `${headerHeight}px`;
-   </Script>
 </html> 
