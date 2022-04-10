@@ -321,9 +321,6 @@ img {
 }
 
 .benefits-icon {
-  display: flex;
-  position: center;
-
   width: 70px;
   height: 70px;
 }
@@ -465,11 +462,10 @@ img {
   width: 44px;
   height: 44px;
 
-  align-items: center;
   border-radius: 50px;
   fill: var(--icon-color);
-
-  transition-property: background-color fill;
+  
+  transition-property: background-color, fill;
   transition-duration: var(--time-change);
   transition-timing-function: var(--time-steps);
   transition-delay: 100ms;
@@ -513,7 +509,7 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition-property: fill border;
+  transition-property: fill, border;
   transition-duration: var(--time-change);
   transition-timing-function: var(--time-steps);
   transition-delay: 100ms;
@@ -569,7 +565,7 @@ img {
   color: var(--title-txt-cl);
   background-color: var(--section-bg-cl);
 
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: var(--time-change);
   transition-timing-function: var(--time-steps);
   transition-delay: 100ms;
@@ -733,7 +729,7 @@ img {
   background-color: var(--footer-bg-icon);
   fill: var(--accent-txt-cl);
 
-  transition-property: background-color fill;
+  transition-property: background-color, fill;
   transition-duration: var(--time-change);
   transition-timing-function: var(--time-steps);
   transition-delay: 100ms;
@@ -833,14 +829,12 @@ img {
 .clos-modal {
   position: absolute;
 
-
-
   right: 8px;
   top: 8px;
   width: 30px;
   height: 30px;
   
-  background: #FFFFFF;
+  background-color: var(--accent-txt-cl);
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-radius: 50%;
@@ -872,9 +866,7 @@ img {
 
   width: 270px;
   height: 120px;
-
   background-size: contain;
-
 }
 .icon-antennа::before {
   background-image: url(../images/icon/antenna.svg);
