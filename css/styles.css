@@ -637,15 +637,14 @@ img {
   padding: 63px 24px;
 
   transform: translateY(100%);
-  transition: transform 250ms var(--time-steps);
+  transition: transform var(--time-change) var(--time-steps);
 
   background: var(--overlay-color);
 }
-.work-item-pic:hover.overlay-thumb,
-.work-item-pic:focus.overlay-thumb {
+.work-link:hover .overlay-thumb,
+.work-link:focus .overlay-thumb {
   transform: translateY(0);
 }
-
 .overlay-txt {
   font-family: var(--main-font);
   font-weight: 400;
